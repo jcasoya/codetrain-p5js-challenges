@@ -26,8 +26,10 @@ function draw() {
   //   point(300, 200);
   // }
 
-  if (mouseX > 300 && mouseX < 400) {
+  if (mouseX > 250 && mouseX < 350 && mouseY > 150 && mouseY < 250) {
     fill(255, 0, 200);
   }
+  
+  rectMode(CENTER);
   rect(300, 200, 100, 100);
 }
