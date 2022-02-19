@@ -26,3 +26,15 @@ function draw() {
   ball.x = ball.x + ball.xspeed;
   ball.y = ball.y  + ball.yspeed;
 }
+
+function move() {
+  
+}
+
+function bounce() {
+  
+}
+
+function display() {
+  
+}
