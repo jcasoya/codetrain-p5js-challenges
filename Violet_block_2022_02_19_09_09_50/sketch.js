@@ -1,12 +1,12 @@
 let ball = {
   x: 0,
   y: 0,
-  xspeed: 8,
+  xspeed: 5,
   yspeed: -3,
 }
 
 function setup() {
-  createCanvas(600, 400);
+  createCanvas(600, 600);
 }
 
 function draw() {
@@ -20,7 +20,7 @@ function draw() {
     ball.xspeed = -ball.xspeed;  
   }
   if (ball.y > height || ball.y < 0) {
-      ball.yspeed = ball.yspeed * -1;
+      ball.yspeed = -ball.xspeed;
   }
   
   ball.x = ball.x + ball.xspeed;
