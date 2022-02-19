@@ -26,7 +26,7 @@ function bounce() {
     ball.xspeed = -ball.xspeed;  
   }
   if (ball.y > height || ball.y < 0) {
-      ball.yspeed = -ball.xspeed;
+    ball.yspeed = -ball.xspeed;
   }
 }
 
