@@ -17,3 +17,7 @@ function draw() {
   }
 }
   
+for ( let x = 0; x <= width; x = x +50) {
+  fill(255, 0, 200);
+  ellipse(x, 300, 25, 25);
+}
