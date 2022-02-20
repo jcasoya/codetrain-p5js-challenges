@@ -7,19 +7,11 @@ function draw() {
 
   stroke(255);
   strokeWeight(4);
-  noFill();
+  stroke(255);
   
-  // if (mouseX > 250) {
-  //   ellipse(300, 200, 100, 100);
-  // } else if (mouseX > 150) {
-  //   rect(300, 200, 100, 100);
-  // } else if (mouseX > 50) {
-  //   line(0, 0, width, height);
-  // } else {
-  //   point(300, 200);
-  // }
-
-  if (mouseX > 300 && mouseX < 400) {
-    fill(255, 0, 200);
-  }
-  rect(300, 200, 100, 100);
+  ellipse(0, 200, 25, 25);
+  ellipse(50, 200, 25, 25);
+  ellipse(100, 200, 25, 25);
+  ellipse(150, 200, 25, 25);
+  ellipse(200, 200, 25, 25);
+  ellipse(250, 200, 25, 25);
