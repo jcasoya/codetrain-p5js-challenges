@@ -11,19 +11,25 @@ function setup() {
 
 function draw() {
   background(0);
+}
+
+function move() {
+  ball.x = ball.x + ball.xspeed;
+  ball.y = ball.y + ball.yspeed;
+}
+
+function bounce() {
+  if (ball.x > width || ball.x < 0) {
+    ball.xspeed = -ball.xspeed;
+  }
+  if (ball.y > height || ball.y < 0) {
+    ball.yspeed = -ball.yspeed;
+  }
+}
+
+function display() {
   stroke(255);
   strokeWeight(4);
   noFill();
   ellipse(ball.x, ball.y, 24, 24);
-}
-
-if (ball.x > width || ball.x < 0) {
-  ball.xspeed = -ball.xspeed;
-}
-if (ball.y > height || ball.y < 0) {
-  ball.yspeed = -ball.yspeed;
-}
-
-ball.x = ball.x + ball.xspeed;
-ball.y = ball.y + ball.yspeed;
 }
