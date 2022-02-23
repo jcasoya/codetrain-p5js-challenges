@@ -15,10 +15,10 @@ function draw() {
   lollipop(300, 200, 150);
 }
 
-function lollipop() {
+function lollipop(x, y, diameter) {
   fill(0, 200, 255);
   rect(x - 10, y, 20, 150);
 
   fill(255, 0, 200);
-  ellipse(300, 200, 100, 100);
+  ellipse(x, y, diameter, diameter);
 }
